@@ -1,0 +1,20 @@
+public class Dos{
+
+     public static void main(String []args){
+        System.out.println("Suma de pares < 4.000.000");
+        int ant = 1;
+        int b = 1;
+        int buff = 0;
+        int sumatoria = 0;
+        while (b < 4000000){
+            buff = ant;
+            ant = b;
+            b += buff;
+            System.out.println(b);
+            if(b % 2 == 0){
+                sumatoria += b;
+            }
+        }
+        System.out.println("Sumatoria total: " + sumatoria);
+     }
+}
